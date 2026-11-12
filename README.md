@@ -2,7 +2,8 @@
 
 Sincronização e supervisão de shows ao vivo entre cidades: a máquina **Origem** comanda e as
 máquinas **Seguidoras** repetem, com confirmação de cada comando. Funciona com **Resolume Arena**,
-**PowerPoint**, **PDF-to-PPT** e **Adobe Reader**, pela rede local ou pela **ZeroTier**.
+**PowerPoint**, **PDF-to-PPT** e **Adobe Reader/Acrobat**, pela rede local ou pela **ZeroTier**. Na estação de
+Conteúdos, até as teclas que o operador aperta se repetem nos Seguidores.
 
 ![Painel da Central do Show](docs/painel-central.png)
 
@@ -16,9 +17,9 @@ Abra a [release mais recente](../../releases/latest) e escolha um dos arquivos:
 
 | Arquivo | Para quem |
 | :--- | :--- |
-| `ShowSyncRemote_..._Setup.exe` | **Recomendado.** Instala no Windows, com atalho no menu Iniciar. |
-| `ShowSyncRemote_..._ASSINADO.exe` | Executável único, sem instalação. |
-| `ShowSyncRemote_..._portable_ASSINADO.zip` | Versão portátil: descompacte e rode de uma pasta ou pendrive. |
+| `ShowSyncRemote_vX.Y.Z__build_NNNN_Setup.exe` | **Recomendado.** Instala no Windows, com atalho no menu Iniciar. |
+| `ShowSyncRemote_vX.Y.Z__build_NNNN.exe` | Executável único, sem instalação. |
+| `ShowSyncRemote_vX.Y.Z__build_NNNN_portable.zip` | Versão portátil: descompacte e rode de uma pasta ou pendrive. |
 
 São **os mesmos arquivos** do site, com o mesmo SHA-256 (está na descrição de cada release).
 Use o GitHub quando o download pelo site estiver lento ou bloqueado na sua rede.
@@ -36,7 +37,7 @@ nova (ele consulta o site oficial; nada é baixado nem instalado sozinho).
 No PowerShell, na pasta do download:
 
 ```powershell
-Get-FileHash .\ShowSyncRemote_v1.16.0__build_1039_Setup.exe
+Get-FileHash .\ShowSyncRemote_v1.20.0__build_1050_Setup.exe
 ```
 
 O resultado tem que ser igual ao SHA-256 publicado na release e no site.
